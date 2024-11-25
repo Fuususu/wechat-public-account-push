@@ -12,8 +12,11 @@ const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '65ecd79b901c872ad61055dc1dad04ba',
-
-
+  
+  SWITCH: {
+      // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+      earthyLoveWords: true,
+  },
 
   USERS: [
     {
@@ -42,10 +45,9 @@ const USER_CONFIG = {
         // 结婚纪念日
         
       ],
-    },
-  ],
 
-    USERS: [
+    },
+
     {
       PROVINCE: '山东',
       CITY: '即墨',
@@ -61,7 +63,7 @@ const USER_CONFIG = {
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
           type: '*生日', name: '雯雯', year: '2001', date: '09-06',
-        },
+      },
 
         
       ],
@@ -73,7 +75,9 @@ const USER_CONFIG = {
         
       ],
     },
+    
   ],
+
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
