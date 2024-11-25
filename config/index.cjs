@@ -18,6 +18,8 @@ const USER_CONFIG = {
       earthyLoveWords: true,
   },
 
+  IS_SHOW_COLOR: true,
+
   USERS: [
     {
       PROVINCE: '山东',
