@@ -23,6 +23,9 @@ const USER_CONFIG = {
 
   IS_SHOW_COLOR: true,
 
+  PROVINCE: '青岛',
+  CITY: '平度市',
+
   USERS: [
     {
       PROVINCE: '青岛',
