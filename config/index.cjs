@@ -22,14 +22,14 @@ const USER_CONFIG = {
 
   USERS: [
     {
-      PROVINCE: '山东',
+      PROVINCE: '青岛',
       CITY: '平度',
       // 想要发送的人的名字
       name: '雯雯',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oCIqJ6sLQd7lR3ib9pPT3wr_LHQE',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'kVreXJjvdAzJwRYyXg3HvaMYCA6ET2EH2YmzalmlOuU',
+      useTemplateId: 'ACqGyKWrDfvz4BIJVOflzDRZM9fKVtYKkMYHPqHGokY',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-22',
       festivals: [
@@ -51,14 +51,14 @@ const USER_CONFIG = {
     },
 
     {
-      PROVINCE: '山东',
+      PROVINCE: '青岛',
       CITY: '即墨',
       // 想要发送的人的名字
       name: '自己',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oCIqJ6pISvIoTThAWoqch66nR2nU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'kVreXJjvdAzJwRYyXg3HvaMYCA6ET2EH2YmzalmlOuU',
+      useTemplateId: 'ACqGyKWrDfvz4BIJVOflzDRZM9fKVtYKkMYHPqHGokY',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-22',
       festivals: [
