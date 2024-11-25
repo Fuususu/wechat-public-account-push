@@ -25,7 +25,7 @@ const USER_CONFIG = {
 
   USERS: [
     {
-      PROVINCE: '青岛',
+      PROVINCE: '',
       CITY: '平度市',
       // 想要发送的人的名字
       name: '雯雯',
@@ -54,7 +54,7 @@ const USER_CONFIG = {
     },
 
     {
-      PROVINCE: '青岛',
+      PROVINCE: '',
       CITY: '即墨区',
       // 想要发送的人的名字
       name: '自己',
