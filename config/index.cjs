@@ -14,6 +14,9 @@ const USER_CONFIG = {
   APP_SECRET: '65ecd79b901c872ad61055dc1dad04ba',
   
   SWITCH: {
+       /** 每日天气 */
+      // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+      weather: true,
       // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
       earthyLoveWords: true,
   },
@@ -23,7 +26,7 @@ const USER_CONFIG = {
   USERS: [
     {
       PROVINCE: '青岛',
-      CITY: '平度',
+      CITY: '平度市',
       // 想要发送的人的名字
       name: '雯雯',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
@@ -52,7 +55,7 @@ const USER_CONFIG = {
 
     {
       PROVINCE: '青岛',
-      CITY: '即墨',
+      CITY: '即墨区',
       // 想要发送的人的名字
       name: '自己',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
