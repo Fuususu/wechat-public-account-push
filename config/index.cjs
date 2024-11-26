@@ -19,8 +19,34 @@ const USER_CONFIG = {
       weather: true,
       // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
       earthyLoveWords: true,
+      /** 生日消息和节日消息 */
+      // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+      birthdayMessage: true,
   },
 
+ TIAN_API: {
+    // 天行API KEY，如果使用天行API则需要填写此项
+    key: 'f648c93eb61704cbdb2255b0098a3690',
+    
+    /** 天行API相关，需要config中配置 TIAN_API_KEY  */
+    // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    morningGreeting: false,
+  
+    // 晚安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    eveningGreeting: false,
+  
+    // 天行天气（展示未来N天，最多7天）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: 1,
+  
+    // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    networkHot: 0,
+  
+    // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
+    //networkHotType: 'default',
+  },
+  
+  /** 是否给文字设置多彩颜色, 和emoji不兼容 */
+  // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
   IS_SHOW_COLOR: true,
 
   PROVINCE: '青岛',
@@ -28,43 +54,41 @@ const USER_CONFIG = {
 
   USERS: [
     {
-      PROVINCE: '青岛',
-      CITY: '平度市',
       // 想要发送的人的名字
       name: '雯雯',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oCIqJ6sLQd7lR3ib9pPT3wr_LHQE',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'Tak__ixhPwYLIGlHCbaXD5yvVd2Gs13s4Q_Q1Fhe14w',
+      useTemplateId: 'VFtXi79Fz7unoCf4dDhqxPmWeS3hF1_rYztxZe64gQk',
+      PROVINCE: '青岛',
+      CITY: '平度市',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-22',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
           type: '*生日', name: '雯雯', year: '2001', date: '09-06',
-        },
-
-        
+        },  
       ],
+      
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2022-04-02' },
-        // 结婚纪念日
-        
+        // 结婚纪念日 
       ],
 
     },
 
     {
-      PROVINCE: '山东',
-      CITY: '青岛',
       // 想要发送的人的名字
       name: '自己',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oCIqJ6pISvIoTThAWoqch66nR2nU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'Tak__ixhPwYLIGlHCbaXD5yvVd2Gs13s4Q_Q1Fhe14w',
+      useTemplateId: 'VFtXi79Fz7unoCf4dDhqxPmWeS3hF1_rYztxZe64gQk',
+      PROVINCE: '青岛',
+      CITY: '即墨市',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-22',
       festivals: [
@@ -72,7 +96,6 @@ const USER_CONFIG = {
         {
           type: '*生日', name: '雯雯', year: '2001', date: '09-06',
       },
-
         
       ],
       // 我们在一起已经有xxxx天了的配置
@@ -80,8 +103,10 @@ const USER_CONFIG = {
         // 在一起的日子
         { keyword: 'love_day', date: '2022-04-02' },
         // 结婚纪念日
-        
       ],
+
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: 'https://www.cctv.com/',
     },
     
   ],
