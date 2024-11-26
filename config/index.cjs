@@ -49,9 +49,6 @@ const USER_CONFIG = {
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
   IS_SHOW_COLOR: true,
 
-  PROVINCE: '青岛',
-  CITY: '平度市',
-
   USERS: [
     {
       // 想要发送的人的名字
@@ -91,6 +88,11 @@ const USER_CONFIG = {
       CITY: '即墨市',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-22',
+
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: 'https://www.cctv.com/',
+
+      // 专属节日提醒，
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
@@ -104,9 +106,6 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2022-04-02' },
         // 结婚纪念日
       ],
-
-      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: 'https://www.cctv.com/',
     },
     
   ],
@@ -123,6 +122,10 @@ const USER_CONFIG = {
       id: 'oCIqJ6pISvIoTThAWoqch66nR2nU	',
     }
   ],
+
+  // 默认所在省份城市
+  PROVINCE: '青岛',
+  CITY: '平度市',
 
 }
 
